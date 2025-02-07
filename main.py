@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
     a=sys.path.append(get_path("src"))  # Добавляем текущую директорию в путь поиска модулей
     print(a)
-    setup_logging("logs/training.log")
+    setup_logging(get_path("training.log"))
 
     # Инициализация модели
     model = QAModel("data/initial_qa.txt")
